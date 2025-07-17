@@ -12,7 +12,6 @@ export function Header() {
                 <a href="/">Home</a>
                 <a href="/community">Community</a>
                 <a href="/knowledge">Knowledge Zone</a>
-                <a href="/personal">Personalized Updates</a>
         </nav>
          <img src={avatar} alt="Avatar" className="avatar"/>
         <p className="userName">Tomahito Mori</p>
