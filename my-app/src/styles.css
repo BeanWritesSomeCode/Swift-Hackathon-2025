@@ -105,6 +105,16 @@ button:hover {
     padding-right: 10px;
 }
 
+.avatar-post {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-left: 1rem;
+    padding-right: 10px;
+}
+
 .sparkLogo {
     width: 50px;
     height: 50px;
@@ -119,13 +129,13 @@ button:hover {
 
 .main-container.sidebar-open {
   width: calc(85% - 220px); 
+  overflow-inline: scroll;
 }
 
-<<<<<<< Updated upstream
 .main-container.sidebar-closed {
   width: calc(100% - 60px); 
+  overflow-inline: scroll;
 }
-=======
 /* move main container full width when sidebar is hidden */
 .main-layout.full-width .container {
   width: 100%;
@@ -135,13 +145,24 @@ button:hover {
 {
     max-width: 2500px;
     width: 60%;
-    margin-top: 30px; 
+    margin-top: 10px; 
+    margin-left: 15%;
     background: #f8f8f8;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: left;
+    overflow-wrap: break-word;
+    overflow-inline: scroll;
     height: 8%;
     transition: all 0.3s ease;
 }
->>>>>>> Stashed changes
+
+.post-header
+{
+    display: flex;
+    align-items: center;
+    gap: 0;
+    white-space: nowrap;
+    margin: 0;
+}
