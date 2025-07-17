@@ -1,13 +1,12 @@
-
+import { Link } from 'react-router-dom'
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <button className="toggle-btn" onClick={toggle}>☰</button>
       <ul className="sidebar-links">
         <li>Saved Links:</li>
-        <li><a href="#">Saved 1</a></li>
-        <li><a href="#">Saved 2</a></li>
-        <li><a href="#">Saved 3</a></li>
+          <li><Link to='/community/cat'><button>Community - Cat</button></Link></li>
+        <li><Link to='/knowledge/js'><button>Knowledge - JS</button></Link></li>
       </ul>
     </div>
   );

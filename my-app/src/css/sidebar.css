@@ -5,7 +5,7 @@
   color: white;
   border-radius: 10px;
   margin-top: 10%;
-  width: 220px;
+  width: 10%;
   height: 50%;
   transition: width 0.3s ease;
   position: fixed;
@@ -18,8 +18,12 @@
 }
 
 .sidebar.closed {
-  width: 60px;
+  width: 10%;
 }
+.sidebar.open {
+    width: 10%;
+}
+
 
 .sidebar .toggle-btn {
   position: absolute;

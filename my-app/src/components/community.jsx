@@ -9,7 +9,7 @@ import wit from "@/assets/WIT.png"
 function Community() {
     return (
         <>
-        <div className="main-container community-post-container">
+        <div className="main-container">
             <div className="grid-container">
                 <div className="grid-item">
                     <div className="comm-item-img">
