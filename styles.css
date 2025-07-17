@@ -1,0 +1,131 @@
+/* styles.css */
+body {
+    background-color: #acf9e9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-layout {
+    display: flex;
+    margin-top: 100px; /* Push down below fixed header */
+    gap: 20px; /* Optional: space between sidebar and content */
+    padding: 0 30px; /* Optional: space on left and right edges */
+}
+
+.container {
+    max-width: 2500px;
+    width: 85%;
+    margin-top: 90px; 
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 480px;
+    transition: all 0.3s ease;
+}
+
+.container-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    margin-top: 80px;
+    background: #01a990;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar {
+    width: 250px;
+    height: 480px;
+    margin-top: 90px; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+.header-bar {
+    background-color: #333d3e;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.header-bar .logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-bar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: opacity 0.2s;
+}
+
+.header-bar nav a:hover {
+    opacity: 0.7;
+}
+
+.content {
+    padding: 100px 30px 30px 30px;
+}
+
+.no-underline {
+    color: white;
+    text-decoration: none;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.sparkLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* sidebar hidden state */
+.sidebar.hidden {
+  display: none;
+}
+
+/* move main container full width when sidebar is hidden */
+.main-layout.full-width .container {
+  width: 100%;
+}
