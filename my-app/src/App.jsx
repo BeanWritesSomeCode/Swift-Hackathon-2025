@@ -6,12 +6,15 @@ import './styles.css'
 import './App.css'
 import { Routes, Router, Route } from 'react-router-dom'
 import Cat from './components/cat'
+import Sidebar from './components/Sidebar'
+import './css/sidebar.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Sidebar />
       <Routes>
         <Route path='/' element={<Header />}>
             <Route index element={<MainContainer />} />

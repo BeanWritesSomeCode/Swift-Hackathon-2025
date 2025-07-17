@@ -26,12 +26,50 @@ body {
     transition: all 0.3s ease;
 }
 
+.main-container .grid-container-3x2 {
+    align-content: center;
+    position: relative;
+    left: 10%;
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: 30% 30% 30% 30%;
     gap: 5%;
     height: 70%;
     width: 80%;
+}
+.grid-container-3x2 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 27% 27% 27%;
+    align-content: center;
+    gap: 5%;
+    height: 90%;
+    width: 80%;
+}
+
+.grid-container-3x2 div {
+    background-color: red;
+    align-content: center;
+}
+.grid-container-3x2 div h3 {
+    text-align: left;
+    margin-left: 10%;
+
+}
+.grid-container-3x2 div p {
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+
+}
+.grid-container-3x2 div img {
+    position: relative;
+    max-width: 50%;
+    max-height: 50%;
+    left: -20%;
+    top: 10%;
 }
 .grid-item {
     text-align: center;
