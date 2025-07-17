@@ -112,6 +112,7 @@ button:hover {
     object-fit: cover;
     vertical-align: middle;
     margin-left: 350px;
+    padding-right: 10px;
 }
 
 .sparkLogo {

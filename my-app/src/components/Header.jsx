@@ -14,6 +14,7 @@ export function Header() {
             <a href="#">Personalized Updates</a>
         </nav>
          <img src={avatar} alt="Avatar" className="avatar"/>
+         Tomahito Mori
     </header>
 )
 }
