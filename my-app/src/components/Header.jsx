@@ -1,4 +1,3 @@
-import React from "react";
 import sparkLogo from '../assets/sparkDarker.png'
 import avatar from '../assets/avatar.jpg'
 

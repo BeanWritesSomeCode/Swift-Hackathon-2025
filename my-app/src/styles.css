@@ -13,14 +13,14 @@ body {
     padding: 0 30px; /* space on left and right edges */
 }
 
-.container {
+.main-container {
     max-width: 2500px;
     width: 85%;
-    margin-top: 90px; 
+    margin-top: 10%; 
     background: white;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     height: 480px;
     transition: all 0.3s ease;
