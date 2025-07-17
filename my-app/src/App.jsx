@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Header from "./components/header"
-import MainContainer from './components/Main-Container'
+import IndexPage from './components/Index-Page'
 import Sidebar from './components/Sidebar'
+import KnowledgeZone from './components/Knowledge-Zone'
+import './App.css'
 import './styles.css'
 import './css/sidebar.css'
-import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -14,10 +15,11 @@ function App() {
     <>
       <Sidebar isOpen={sidebarOpen} toggle={() => setSidebarOpen(!sidebarOpen)} />
 
-      <div className={`main-layout ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+      <div className={"main-layout"}>
         <Routes>
           <Route path="/" element={<Header />}>
-            <Route index element={<MainContainer />} />
+            <Route index element={<IndexPage sidebarOpen={sidebarOpen}/>} />
+            <Route path="/knowledge" element={<KnowledgeZone sidebarOpen={sidebarOpen}/>} />
             {/* Pages go here */}
           </Route>
         </Routes>

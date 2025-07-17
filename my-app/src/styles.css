@@ -1,9 +1,10 @@
 /* styles.css */
-body {
+html, body {
     background-color: #acf9e9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 .main-layout {
@@ -16,14 +17,14 @@ body {
 .main-container {
     max-width: 2500px;
     width: 100%;
-    margin-top: 10%; 
     background: white;
-    padding: 40px;
+    padding: 100px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 480px;
+    min-height: 60vh;
     transition: all 0.3s ease;
+    flex: 1;
 }
 
 .container-top-left {
@@ -113,14 +114,18 @@ button:hover {
     vertical-align: middle;
     margin-left: 15px;
 }
-  /*side bar stuff*/
-
-
-
+/* 
 .main-container.sidebar-open {
   width: calc(85% - 220px); 
 }
 
 .main-container.sidebar-closed {
   width: calc(100% - 60px); 
+} */
+
+.main-container {
+  outline: 2px dashed red;
+}
+.main-layout {
+  outline: 2px dashed blue;
 }

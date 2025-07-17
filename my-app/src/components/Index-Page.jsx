@@ -1,4 +1,4 @@
-function MainContainer({ sidebarOpen }) {
+function IndexPage({ sidebarOpen }) {
   return (
     <div className={`main-container ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
       <h1>Welcome to SPARK!</h1>
@@ -9,4 +9,4 @@ function MainContainer({ sidebarOpen }) {
   );
 }
 
-export default MainContainer
+export default IndexPage
