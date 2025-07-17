@@ -8,7 +8,7 @@ body {
 
 html,
 body {
-    min-height: 100vh;
+    height: 100%;
 }
 
 .main-layout {
@@ -255,18 +255,21 @@ button:hover {
     margin-left: 15px;
 }
 
-/* sidebar hidden state */
 .sidebar.hidden {
     display: none;
 }
 
-/* move main container full width when sidebar is hidden */
 .main-layout.full-width .container {
     width: 100%;
 }
 
-.long-div {
-    min-height: 50vh;
+.zone-sub-text {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.forum-container {
+    min-height: 35vh;
     width: 100%;
     color: white;
     font-size: 2rem;
@@ -274,20 +277,38 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-
+    border-radius: 20px;
+    gap: 20px;
 }
 
-.red {
-    border: 5px solid;
-    color: #e63946;
+.forum-container:hover {
+    background-color: lightblue;
+    transition: background-color 0.3s ease;
+}
+
+.forum-logo {
+    border-radius: 20px;
+    height: 15%;
+    width: 15%;
+    margin-right: -1000px;
+}
+
+.forum-text-div {
+
+    font-size: 1rem;
+}
+
+.forum-text-div h1 {
+    font-size: 2.5rem;
+    margin-left: -50px;
+}
+
+.forum-text-div p {
+    color: #2a9d8f;
+    margin-right: 40px;
 }
 
 .green {
     border: 5px solid;
     color: #2a9d8f;
-}
-
-.blue {
-    border: 5px solid;
-    color: #264653;
 }

@@ -7,7 +7,7 @@ export function Header() {
         <>
         <header className="header-bar">
              <img src={sparkLogo} alt="Spark Logo" className="sparkLogo"/>
-            <h1 className="logo"><a href="homepage.html" className="no-underline">SPARK</a></h1>
+            <h1 className="logo"><a href="/" className="no-underline">SPARK</a></h1>
              <nav>
                 <a href="/">Home</a>
                 <a href="/community">Community</a>
