@@ -22,8 +22,71 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 480px;
+    height: 70vh;
     transition: all 0.3s ease;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30%;
+    gap: 5%;
+    height: 70%;
+    width: 80%;
+}
+.grid-item {
+    text-align: center;
+    border-color: gray;
+    border-width: 2px;
+    right: 50%;
+    border-style: solid;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.comm-item-img {
+    position: relative;
+    height: 80%;
+    margin-left: 5%;
+    padding-right: 5%;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comm-item-img img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.comm-item-text {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+.comm-item-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.comm-item-text h3 {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item button {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.main-container h1 {
+    color: black;
+}
+
+.main-container p {
+    color: black;
 }
 
 .container-top-left {
@@ -111,8 +174,9 @@ button:hover {
     border-radius: 50%;
     object-fit: cover;
     vertical-align: middle;
-    margin-left: 350px;
+    horiz-align: right;
     padding-right: 10px;
+    margin-left: 50%;
 }
 
 .sparkLogo {
