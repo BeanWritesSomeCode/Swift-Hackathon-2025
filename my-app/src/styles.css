@@ -8,26 +8,26 @@ body {
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 .main-layout {
     display: flex;
-    margin-top: 100px;
+    justify-content: center;
+    padding-top: 12vh;
     gap: 20px;
-    padding: 0 30px;
+    align-items: flex-start;
 }
 
 .main-container {
     max-width: 2500px;
     width: 85%;
-    margin-top: 10%;
     background: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 90%;
+    height: auto;
     transition: all 0.3s ease;
 }
 
@@ -85,7 +85,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .grid-container-1x3 {

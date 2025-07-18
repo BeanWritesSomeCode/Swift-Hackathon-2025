@@ -41,16 +41,6 @@ function Community() {
                         <button>Button</button>
                     </div>
                 </div>
-                <div className="grid-item">
-                    <div className="comm-item-img">
-                        <img alt="bingus" src={gwc}></img>
-                    </div>
-                    <div className="comm-item-text">
-                        <h3>Girls Who Code</h3>
-                        <p>Closing the gender gap</p>
-                        <button>Button</button>
-                    </div>
-                </div>
             </div>
         </div>
         </>

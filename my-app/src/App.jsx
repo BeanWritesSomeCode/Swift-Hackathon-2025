@@ -1,21 +1,26 @@
 import { useState } from 'react'
 import Header from "./components/header"
 import MainContainer from './components/Main-Container'
+import Sidebar from './components/Sidebar'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import Community from './components/Community'
 import './styles.css'
+import './css/sidebar.css'
 import './App.css'
-import { Routes, Router, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Cat from './components/cat'
-import Sidebar from './components/Sidebar'
 import './css/sidebar.css'
 import KnowledgeZone from './components/Knowledge-Zone'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [sidebarOpen, setSidebarOpen] = useState(true)
 
   return (
     <>
-      <Sidebar />
+      <Sidebar isOpen={sidebarOpen} toggle={() => setSidebarOpen(!sidebarOpen)} />
+
+      <div className={`main-layout ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
       <Routes>
         <Route path='/' element={<Header />}>
             <Route index element={<MainContainer />} />
@@ -31,7 +36,8 @@ function App() {
             
         </Route>
       </Routes>
-
+      </div>
+    <Header/>
     </>
   )
 }

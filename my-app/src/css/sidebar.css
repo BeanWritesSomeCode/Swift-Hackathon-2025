@@ -14,6 +14,58 @@
   overflow-x: hidden;
   padding-top: 60px;
   z-index: 999;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.sidebar .toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  padding: 15px 20px;
+}
+
+.sidebar-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-links li:hover {
+  background-color: #34495e;
+}
+/*sidebar css*/ 
+ 
+ .sidebar {
+  background-color: #698287;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10%;
+  width: 220px;
+  height: 50%;
+  transition: width 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  z-index: 999;
 
 }
 
