@@ -2,6 +2,7 @@ import { Link, Routes, Route } from "react-router-dom"
 import bingus from "@/assets/bingus.jpeg";
 import nsbe from "@/assets/NSBE.png"
 import wit from "@/assets/WIT.png"
+import swit from "@/assets/swit.png"
 
 function Community() {
     return (
@@ -21,7 +22,7 @@ function Community() {
                 </div>
                 <div className="grid-item">
                     <div className="comm-item-img">
-                        <img alt="bingus" src={wit}></img>
+                        <img alt="bingus" src={swit}></img>
                     </div>
                     <div className="comm-item-text">
                         <h3>WIT</h3>
