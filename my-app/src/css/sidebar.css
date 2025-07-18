@@ -73,6 +73,20 @@
   width: 60px;
 }
 
+.sidebar.closed .toggle-btn {
+  top: 50%;
+  transform: translate(-100%, -470%);
+}
+
+.sidebar.closed .sidebar-links {
+  display: none;
+}
+
+.sidebar.closed .sidebar-links li {
+  justify-content: center;  /* if flex used */
+  padding-left: 0;          /* remove left padding */
+}
+
 .sidebar .toggle-btn {
   position: absolute;
   top: 15px;

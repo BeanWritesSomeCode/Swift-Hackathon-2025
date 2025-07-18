@@ -1,29 +1,66 @@
 import React, { useEffect, useRef } from "react";
+import cavatar from "@/assets/cavatar.png";
+import avatarOne from "@/assets/aiHeadshot.jpg";
+import avatarTwo from "@/assets/aiHeadshot2.jpg";
+import witAvatar from "@/assets/WIT.png";
 
 const posts = [
   {
-    headline: "We love cats!",
+    headline: (
+      <>
+        Benjamin Johnson posted in the <strong>Cat Lovers</strong> group:
+      </>
+    ),
     text: "Cats are super duper cool! They formed a symbiotic relationship with humans.",
-    avatar: "cavatar.jpg", // replace with your actual image path or import
+    avatar: cavatar,
   },
   {
-    headline: "Welcome to the new tribe!",
-    text: "We are so happy to welcome ServiceNow to our tribe!",
-    avatar: "avatar.jpg",
+    headline: "Welcome to the team!",
+    text: "We are so happy to welcome Sydney McKeever to our company!",
+    avatar: avatarOne,
+  },
+  {
+    headline: "Welcome to the team!",
+    text: "We are so happy to welcome Tomahito Mori to our company!",
+    avatar: avatarTwo,
+  },
+
+  {
+    headline: (
+      <>
+        Hailena Bian posted in the <strong>WIT</strong> group:
+      </>
+    ),
+    text: "Reminder: There will be a community picnic this weekend, 8/1!",
+    avatar: witAvatar,
   },
   // add more posts here if needed
 ];
 
 function Post({ headline, text, avatar }) {
   return (
-    <div style={{ display: "flex", gap: 12, padding: 16, alignItems: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        gap: 12,
+        padding: 16,
+        alignItems: "flex-start",
+        width: "100%",
+        boxSizing: "border-box",
+      }}
+    >
       <img
         src={avatar}
         alt="avatar"
-        style={{ width: 50, height: 50, borderRadius: "50%" }}
+        style={{
+          width: 50,
+          height: 50,
+          borderRadius: "50%",
+          marginTop: "10px",
+        }}
       />
-      <div>
-        <h3 style={{ margin: 0 }}>{headline}</h3>
+      <div style={{ marginLeft: 20, textAlign: "left", flexGrow: 1 }}>
+        <h3 style={{ margin: 0, fontWeight: 400 }}>{headline}</h3>
         <p style={{ margin: 0 }}>{text}</p>
       </div>
     </div>
@@ -38,7 +75,7 @@ export default function AutoScrollPosts() {
     let scrollPos = 0;
 
     // scroll speed in pixels per frame
-    const scrollSpeed = 1;
+    const scrollSpeed = 0.5;
 
     // duplicate the posts so we can loop seamlessly
     container.innerHTML += container.innerHTML;
@@ -54,7 +91,6 @@ export default function AutoScrollPosts() {
 
     requestAnimationFrame(step);
 
-    // Cleanup on unmount
     return () => cancelAnimationFrame(step);
   }, []);
 
@@ -62,9 +98,12 @@ export default function AutoScrollPosts() {
     <div
       ref={containerRef}
       style={{
-        height: 200,
+        height: 300,
         overflow: "hidden",
         border: "1px solid #ccc",
+        width: 600,
+        margin: "0 auto",
+        display: "block",
       }}
     >
       <div>

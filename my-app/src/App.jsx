@@ -2,8 +2,6 @@ import { useState } from 'react'
 import Header from "./components/header"
 import MainContainer from './components/Main-Container'
 import Sidebar from './components/Sidebar'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Community from './components/Community'
 import './styles.css'
 import './css/sidebar.css'
@@ -14,7 +12,7 @@ import './css/sidebar.css'
 import KnowledgeZone from './components/Knowledge-Zone'
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <>
