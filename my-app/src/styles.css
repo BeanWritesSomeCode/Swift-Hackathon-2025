@@ -21,7 +21,6 @@ body {
 .main-container {
     max-width: 2500px;
     width: 85%;
-    margin-top: 10%;
     background: white;
     padding: 40px;
     border-radius: 10px;
@@ -29,6 +28,7 @@ body {
     text-align: center;
     height: 90%;
     transition: all 0.3s ease;
+    margin: 5% auto;
 }
 
 .main-container .grid-container-3x2 {
