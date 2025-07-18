@@ -1,15 +1,13 @@
 import { Link, Routes, Route } from "react-router-dom"
-import Community_Dashboard from "../components/Community_Dashboard"
-//import Cat from "../components/Cat"
 import bingus from "@/assets/bingus.jpeg";
-import gwc from "@/assets/GWC.png"
 import nsbe from "@/assets/NSBE.png"
 import wit from "@/assets/WIT.png"
 
 function Community() {
     return (
         <>
-        <div className="main-container community-post-container">
+        <div className="main-container">
+            <h1>Our Communities</h1>
             <div className="grid-container">
                 <div className="grid-item">
                     <div className="comm-item-img">

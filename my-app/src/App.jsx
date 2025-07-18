@@ -3,8 +3,10 @@ import Header from "./components/header"
 import MainContainer from './components/Main-Container'
 import Sidebar from './components/Sidebar'
 import Community from './components/Community'
+import ForumPage from './components/forum'
 import './styles.css'
 import './css/sidebar.css'
+import './css/auto-scroll.css'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Cat from './components/cat'
@@ -30,6 +32,7 @@ function App() {
 
             <Route path = "knowledge">
                 <Route index element={<KnowledgeZone/> } />
+                <Route path="js-forum" element={<ForumPage/> } />
             </Route>
             
         </Route>

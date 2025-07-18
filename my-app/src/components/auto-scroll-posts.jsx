@@ -40,6 +40,7 @@ const posts = [
 function Post({ headline, text, avatar }) {
   return (
     <div
+      className="post"
       style={{
         display: "flex",
         gap: 12,
